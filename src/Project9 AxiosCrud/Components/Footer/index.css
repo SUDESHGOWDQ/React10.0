@@ -1,0 +1,39 @@
+.Footer {
+	background: black;
+	color: white;
+	padding: 20px 0;
+	width: 100%;
+	margin-top: auto;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.footer-content p {
+	margin: 0;
+	font-size: 14px;
+}
+
+.footer-links {
+	display: flex;
+	gap: 20px;
+}
+
+.footer-links a {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+	color: #ccc;
+}

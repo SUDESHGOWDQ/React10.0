@@ -1,0 +1,34 @@
+.create {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.create br {
+  display: none;
+}
+
+.create form > div {
+  margin-bottom: 10px;
+}
+
+.create button {
+  margin-top: 10px;
+  margin-right: 10px;
+}

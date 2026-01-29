@@ -1,0 +1,17 @@
+img{
+	height: 250px;
+	width: 200px;
+}
+
+.Row_poster{
+	display: flex;
+	gap: 10px;
+	margin-left: 50px;
+	margin-bottom: 10px;
+	overflow-x: scroll;
+	
+}
+
+.Row_poster::-webkit-scrollbar{
+	display: none;
+}

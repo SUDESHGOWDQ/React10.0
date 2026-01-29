@@ -1,0 +1,30 @@
+:root{
+	--black-color:#000;
+	--white-color:#fff;
+}
+
+.navbar{
+	height: 100px;
+	width: 100%;
+	background: var(--black-color);
+	color:var(--white-color);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav-left .list{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 10px;
+}
+
+.nav-logo{
+	font-size: 40px;
+	font-weight: 900;
+}
+
+.list li{
+	list-style: none;
+}

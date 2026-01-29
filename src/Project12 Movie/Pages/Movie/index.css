@@ -1,0 +1,133 @@
+/* Root container */
+.movie-details {
+  min-height: 100vh;
+  background: #0f0f0f;
+  color: #ffffff;
+  padding: 40px 60px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Top section */
+.movie-left img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Movie info */
+.movie-right {
+  margin-top: 30px;
+  max-width: 900px;
+}
+
+.movie-right h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.movie-right p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+}
+
+.movie-right p:nth-child(3),
+.movie-right p:nth-child(4) {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Trailer button */
+.movie-right button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-size: 16px;
+  background: #e50914;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.movie-right button:hover {
+  background: #ff1e1e;
+  transform: scale(1.05);
+}
+
+/* Trailer section */
+.movie-trailer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-trailer iframe {
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+/* Cast section */
+.movie-cast {
+  margin-top: 60px;
+}
+
+.movie-cast h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Cast grid */
+.cast-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+/* Individual cast card */
+.cast-member {
+  background: #1c1c1c;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.cast-member:hover {
+  transform: translateY(-8px);
+}
+
+.cast-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px auto 10px;
+  display: block;
+  border: 2px solid #333;
+}
+
+
+.cast-member p {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .movie-details {
+    padding: 20px;
+  }
+
+  .movie-right h1 {
+    font-size: 30px;
+  }
+
+  .movie-trailer iframe {
+    height: 300px !important;
+  }
+}

@@ -1,0 +1,38 @@
+.App {
+  max-width: 500px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.item {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.item span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.item button {
+  float: right;
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.item button:hover {
+  transform: scale(1.1);
+}
+
+.description {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #555;
+}

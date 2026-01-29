@@ -1,0 +1,34 @@
+.edit {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.edit br {
+  display: none;
+}
+
+.edit form > div {
+  margin-bottom: 10px;
+}
+
+.edit button {
+  margin-top: 10px;
+  margin-right: 10px;
+}

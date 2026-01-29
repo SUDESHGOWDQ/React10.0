@@ -1,0 +1,139 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Main App container */
+.App {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* ReactPlayer wrapper (video area) */
+.App > div:first-child {
+  background-color: black;
+}
+
+/* Time / progress bar section */
+.time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  background-color: #181818;
+}
+
+.time span {
+  min-width: 45px;
+  text-align: center;
+  color: #cccccc;
+}
+
+/* Progress slider */
+.time .input {
+  flex: 1;
+  appearance: none;
+  height: 4px;
+  background: #444;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.time .input::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #1db954;
+  border-radius: 50%;
+}
+
+/* Controls container */
+.Controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  background-color: #202020;
+}
+
+/* Left, middle, right sections */
+.left,
+.middle,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Buttons */
+button {
+  background-color: transparent;
+  border: 1px solid #555;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #1db954;
+  border-color: #1db954;
+  color: #000;
+}
+
+/* Volume slider */
+.left input[type='range'] {
+  width: 100px;
+  appearance: none;
+  height: 4px;
+  background: #555;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.left input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+/* Center play button emphasis */
+.middle button {
+  font-weight: bold;
+  padding: 8px 18px;
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+  .Controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .left,
+  .middle,
+  .right {
+    justify-content: center;
+  }
+
+  .left input[type='range'] {
+    width: 80px;
+  }
+}

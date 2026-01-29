@@ -1,0 +1,32 @@
+$black-color: #000;
+$white-color: #fff;
+
+@mixin center-flex{
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navbar{
+	height: 100px;
+	width: 100%;
+	background: $black-color;
+	color: $white-color;
+	@include center-flex;
+	
+
+	.nav-right{
+		.nav-logo{
+			font-size: 30px;
+			font-weight: bold;  
+		}
+	}
+
+	.nav-left .list{
+		@include center-flex;
+		gap: 10px;
+		li{
+			list-style: none;
+		}
+	}
+}
